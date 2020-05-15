@@ -21,11 +21,91 @@
         const inspect = Inspector.into("#observablehq-84d0d289");
         (new Runtime).module(define, name => (name === "canvas") && inspect());
         </script>
+<!-- 1 -->
+
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
-const inspect = Inspector.into("#observablehq-8ed23bfe");
-(new Runtime).module(define, name => name === "audio_overview" ? inspect() : undefined);
+const inspect = Inspector.into("#observablehq-d94478d0");
+(new Runtime).module(define, name => name === "song" ? inspect() : undefined);
+</script>
+<!-- 2 -->
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-e04a3803");
+(new Runtime).module(define, name => name === "song2" ? inspect() : undefined);
+</script>
+<!-- 3 -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-0e2b0c82");
+(new Runtime).module(define, name => name === "song3" ? inspect() : undefined);
+</script>
+<!-- 4 -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-cb38311b");
+(new Runtime).module(define, name => name === "song4" ? inspect() : undefined);
+</script>
+<!-- 5 -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-e994e423");
+(new Runtime).module(define, name => name === "song5" ? inspect() : undefined);
+</script>
+<!-- 6 -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-901cd562");
+(new Runtime).module(define, name => name === "song6" ? inspect() : undefined);
+</script>
+<!-- 7 -->
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-619e3d29");
+(new Runtime).module(define, name => name === "song7" ? inspect() : undefined);
+</script>
+<!-- 8 -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-dd16af16");
+(new Runtime).module(define, name => name === "song8" ? inspect() : undefined);
+</script>
+<!-- 9 -->
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-b112ca83");
+(new Runtime).module(define, name => name === "song9" ? inspect() : undefined);
+</script>
+<!-- 10 -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/faf851b129f06ea8.js?v=3";
+const inspect = Inspector.into("#observablehq-c879f3b0");
+(new Runtime).module(define, name => name === "song10" ? inspect() : undefined);
+</script>
+
+
+<!-- test -->
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@amandawyq/musicspace-audio-features.js?v=3";
+const inspect = Inspector.into("#observablehq-988088c4");
+(new Runtime).module(define, name => name === "newC" ? inspect() : undefined);
 </script>
 
 
@@ -40,7 +120,12 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">MusicSpace</a><button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <!-- MusicSpace -->
+                    <span class="dont-flip-me-plz">Music</span> &nbsp;
+                    <span class="flip-me-plz">S</span>
+                    <span class="dont-flip-me-plz">pace</span>
+                </a><button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#home">Music Room</a></li>
@@ -55,7 +140,9 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <div id="observablehq-84d0d289"></div>
-                <h1 class="masthead-heading text-uppercase mb-3">This is your Music Space!</h1>
+                <h1 class="masthead-heading text-uppercase mb-3">
+                    This is your Music Space!
+                </h1>
                 <br>
                 <p> scroll down to discover more! </p> 
                  <div class="divider-custom divider-light">
@@ -69,9 +156,9 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
             <div class="container d-flex align-items-center flex-column">
                 <h2 class="page-section-heading text-center">Audio Feature Visualization</h2>
                 <br>
-                <p class="masthead-subheading font-weight-light mb-0"> Enjoy a aesthetic landscape visualization generated based on their unique audio feature scores from Spotify API.</p>
+                <p class="masthead-subheading font-weight-light mb-0"> Enjoy an aesthetic landscape visualization generated based on their unique audio feature scores from Spotify API.</p>
                 <br>
-                    <select>
+                    <select id="picDD">
                         <option value="0">Choose a track:</option>
                         <option value="1">Broke In A Minute</option>
                         <option value="2">lovely (with Khalid)</option>
@@ -84,10 +171,17 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                         <option value="9">Tusa</option>
                         <option value="10">Life Is Good (feat. Drake)</option>
                     </select>
+  
                  <div class="divider-custom">
                 </div><br>
                 <!-- <div id="observablehq-7113fe1a"></div> -->
-                <img class="lyrics_ex_img" src="assets/img/main_picture.png" alt="lyrics">
+                <div class="main_img main_png">
+                        <img class="lyrics_img" src="assets/img/main_picture.png" alt="lyrics">
+                        <!-- <div id="observablehq-988088c4" class="lyrics_img"></div> -->
+                        <!-- <div class="clouds"></div> -->
+                        <!-- <div id="observablehq-988088c4" class="project-overlay"></div> -->
+
+                </div>
                 <br><br>
             </div>
          </section>
@@ -97,13 +191,26 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                 <p class="text-center">We visualize a song based on 9 audio features populated by Spotify
                 based on the characteristics<br> of the song. Below is a breakdown 
                 of each audio feature we’ve used in the visualization above.</p>
-                <div id="observablehq-8ed23bfe"></div>
+                <div class="test" id="observablehq-d94478d0" style="display: block;"></div>
+                <div class="test" id="observablehq-d94478d0" style="display: none;"></div>
+                <div class="test" id="observablehq-e04a3803" style="display: none;"></div>
+                <div class="test" id="observablehq-0e2b0c82" style="display: none;"></div>
+                <div class="test" id="observablehq-cb38311b" style="display: none;"></div>
+                <div class="test" id="observablehq-e994e423" style="display: none;"></div>
+                <div class="test" id="observablehq-901cd562" style="display: none;"></div>
+                <div class="test" id="observablehq-619e3d29" style="display: none;"></div>
+                <div class="test" id="observablehq-dd16af16" style="display: none;"></div>
+                <div class="test" id="observablehq-b112ca83" style="display: none;"></div>
+                <div class="test" id="observablehq-c879f3b0" style="display: none;"></div>
             </section>
         <section class="page-section mt-3 mb-5" id="compare">
+
             <div class="container d-flex align-items-center flex-column">
                 <h2 class="page-section-heading text-center">Explore a Feature by Comparing 2 Tracks</h2>
                     <br><!-- <div class="custom-select" style="width:250px;"> -->
-                    <select>
+                            <!-- <div id="observablehq-988088c4"></div> -->
+
+                    <select id="audio_dropdown">
                           <option value="0">Select an Audio Feature:</option>
                           <option value="1">danceability</option>
                           <option value="2">energy</option>
@@ -116,17 +223,101 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                           <option value="9">mode</option>
                     </select><br>
                       <!-- </div> -->
+                    <div class="audio_select choose text-center"></div>
+
+                    <div class="audio_select select-1 text-center" style="display: none;">
                     <b>Danceability</b>
-                    <p>Danceability describes how suitable a track is for dancing based on a combination of musical <br>
-                    elements including tempo, rhythm stability, beat strength, and overall regularity. A value of <br>
-                    0.0 is least danceable and 1.0 is most danceable.</p><br>
-                    <b>How we choose the visual encoding: </b>
-                    <p>We use a jagged line to represent dancability because the edges and 
-                    sharp points remind us of pulse and <br>represents movement. The higher 
-                        the danceability is, the more jagged the line is. </p>
-                    <section class="container_compare">
+                        <p>Danceability describes how suitable a track is for dancing based on a combination of musical <br>
+                        elements including tempo, rhythm stability, beat strength, and overall regularity. A value of <br>
+                        0.0 is least danceable and 1.0 is most danceable.</p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use a jagged line to represent dancability because the edges and sharp points remind us of <br>
+                        pulse and represents movement. The higher the danceability is, the more jagged the line is. </p>
+                    </div>
+                    <div class="audio_select select-4 text-center" style="display: none;">
+
+                    <b>Instrumentalness</b>
+                        <p>Predicts whether a track contains no vocals.  Rap or spoken word tracks are clearly “vocal”. <br> 
+                        The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal <br>
+                         content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher <br>
+                          as the value approaches 1.0.</p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use the magnitude of the sun/moon to represent instrumentalness. The size of the sun represents <br> 
+                            the amount of vocal content. Music with a high instrumentalness score will result in a very small sun/moon.</p>
+                    </div>                    
+                    <div class="audio_select select-7 text-center" style="display: none;">
+                    <b>Tempo</b>
+                        <p>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is <br> 
+                            the speed or pace of a given piece and derives directly from the average beat duration. </p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use the wave to represent tempo because we think the movement in water can represent the speed or pace of a song.<br> 
+                        If the tempo number is high, the waves will be more dense to reflect the fast pace. </p>
+                    </div>                    
+                    <div class="audio_select select-2 text-center" style="display: none;">
+                    <b>Energy</b>
+                        <p>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. <br> 
+                        Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while <br>
+                         a Bach prelude scores low on the scale. </p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use transparency of the entire picture to represent energy because we think an energeteic song will <br>
+                        have more presence and therefore has less transparency.</p>
+                    </div>
+                    <div class="audio_select select-5 text-center" style="display: none;">
+                    <b>Liveness</b>
+                        <p>Detects the presence of an audience in the recording. Higher liveness values represent an increased <br> 
+                            probability that the track was performed live. A value above 0.8 provides strong likelihood <br> 
+                            that the track is live. </p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use the magnitude of green mountains to represent liveness because mountains convey a sense of <br> 
+                            liveliness and energy normally seen from the audience in musical performances. A high liveness score <br> 
+                            will results in taller/bigger sets of mountains in the visualization.</p>
+                    </div>                    
+                    <div class="audio_select select-8 text-center" style="display: none;">
+                    <b>Valence</b>
+                        <p>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high <br> 
+                            valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more <br> 
+                            negative (e.g. sad, depressed, angry). </p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use the color scheme of the background to represent valence because we think color communicates mood <br> 
+                        very well, and valence is a representation of the overall mood of the song. When the song has a high valence  <br>
+                        score, it tends to be happier, and we increase the amount of warm tone in the color gradient, and vice versa.</p>
+                    </div>                     
+                    <div class="audio_select select-3 text-center" style="display: none;">
+                    <b>Acousticness</b>
+                        <p>Acoustic music primarily uses instruments that produce sound through acoustic means, as opposed <br>
+                         to electric or electronic means.A confidence measure from 0.0 to 1.0 of whether the track is acoustic. <br>
+                          1.0 represents high confidence the track is acoustic.</p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We decided to use line to represent the precense of additional track/instrument. A song with acoustic <br>
+                         score close to 1.0 will have less line and vice versa. The total amount of lines to display is 10. <br>
+                          (when acoustic score is from 0.0-0.1) </p>
+                    </div>
+                    <div class="audio_select select-6 text-center" style="display: none;">
+                    <b>Speechiness</b>
+                        <p>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the <br>
+                             recording, the closer to 1.0 the attribute value. Values between 0.33 and 0.66 describe tracks that <br> 
+                             may contain both music and speech, either in sections or layered, including such cases as rap music. <br> 
+                             Values below 0.33 most likely represent music and other non-speech-like tracks.</p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>The animated cloud represents the speechiness of a song. Higher speechiness score will generate more cloud, <br> 
+                            and if a speechiness score is close to 1, the visualization will be covered by cloud.   </p>
+                    </div>                    
+                    <div class="audio_select select-9 text-center" style="display: none;">
+                        <b>Mode</b>
+                        <p>Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic <br> 
+                            content is derived. Major is represented by 1 and minor is 0.</p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use a sun/moon to represent mode because of the melodic difference between major and minor <br> 
+                            music is very different. Some describes that there is a certain sound-quality to major and<br> 
+                            minor. We display the sun when the music is major and the moon when the music is minor. </p>
+                    </div>                     
+                    
+                    
+                    
+                    
+                        <section class="container_compare">
                             <div class="one col-md-12 school-options-dropdown text-center">
-                                    <select class="track_select">
+                                    <select id="track1">
                                             <option value="0">Choose a track:</option>
                                             <option value="1">Broke In A Minute</option>
                                             <option value="2">lovely (with Khalid)</option>
@@ -139,11 +330,14 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                                             <option value="9">Tusa</option>
                                             <option value="10">Life Is Good (feat. Drake)</option>
                                         </select><br><br>
-                                        <svg width = 300 height = 300 style="border: grey solid 3px"></svg>
-                                        <!-- <img class="img-test" src="assets/img/portfolio/test2.png"/>    -->
+                                        <svg width = 300 height = 300 style="border: grey solid 3px">
+                                        <!-- <img class="" src="assets/img/portfolio/test2.png">  -->
+                                        <image href="https://i.ibb.co/9NBMr57/2.png" height="300" width="300"/>
+
+                                    </svg>
                             </div>
                             <div class="two col-md-12 school-options-dropdown text-center">
-                                    <select class="track_select">
+                                    <select id="track2">
                                             <option value="0">Choose a track:</option>
                                             <option value="1">Broke In A Minute</option>
                                             <option value="2">lovely (with Khalid)</option>
@@ -156,7 +350,9 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                                             <option value="9">Tusa</option>
                                             <option value="10">Life Is Good (feat. Drake)</option>
                                     </select><br><br>
-                                    <svg width = 300 height = 300 style="border: grey solid 3px"></svg>
+                                    <svg width = 300 height = 300 style="border: grey solid 3px">
+                                        <image href="https://i.ibb.co/gtD1gKc/boss-acousticness.png" height="300" width="300"/>
+                                    </svg>
                                     <!-- <img class="img-test" src="assets/img/portfolio/test3.png"/>    -->
                             </div>
                     </section>
@@ -179,13 +375,29 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                         <li>Normalize # of count for each word in the matrix (# count/max count)</li>
                         <li>Plot the matrix with colormap YlGnBu based on the relative score from 0-1</li>
                 </ol>
-                <img class="lyrics_ex_img" src="assets/img/ex1.png" alt="lyrics"><br><br>
+                <img class="lyrics_ex_img" src="assets/img/matrix.png" alt="lyrics"><br><br>
+                <h2 class="page-section-heading text-center">Lyrics Visualization</h2>
+                <br>
+                <select id="picDD2">
+                        <option value="0">Choose a track:</option>
+                        <option value="1">Broke In A Minute</option>
+                        <option value="2">lovely (with Khalid)</option>
+                        <option value="3">Boss Bitch</option>
+                        <option value="4">when the party's over</option>
+                        <option value="5">Blinding Lights</option>
+                        <option value="6">everything i wanted</option>
+                        <option value="7">Don't Start Now</option>
+                        <option value="8">The Box</option>
+                        <option value="9">Tusa</option>
+                        <option value="10">Life Is Good (feat. Drake)</option>
+                </select><br>
+            
             <b>Below is the lyric visualization of the current song based on the frequency of the words.</b><br>
             <section class="container_lyrics">
-                    <div class="one_lyrics">
-                        <img class="lyrics_img" src="assets/img/lyrics-viz/whole-song/Tusa.png" alt="lyrics">
+                    <div class="one_lyrics lyric_png-1">
+                        <img class="lyrics_img" src="assets/img/lyrics-viz/whole-song/1.png" alt="lyrics">
                     </div>
-                    <div class="two_lyrics">
+                    <div class="two_lyrics ex3">
                             <p class="lead"><br>
                                     Yeah, I'm gonna take my horse to the old town road
                                     I'm gonna ride 'til I can't no more
@@ -242,22 +454,23 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
                         </div>
                         <br>
                 </section><br><br><br>
-            <b>Below is the lyric visualization of the most frequent words.</b><br>
+
+            <b>Below is the lyric visualization of the <mark>most frequent words</mark> for the current song.</b><br>
             <section class="container_lyrics">
-                    <div class="one_lyrics">
-                        <img class="lyrics_img" src="assets/img/lyrics-viz/top-word/Tusa.png" alt="lyrics">
+                    <div class="one_lyrics lyric_png-2">
+                        <img class="lyrics_img" src="assets/img/lyrics-viz/top-word/1.png" alt="lyrics">
                     </div>
-                    <div class="two_lyrics">
-                        <img class="bar_img" src="assets/img/bar_chart/lovely.png" alt="lyrics">
+                    <div class="two_lyrics bar_png-1">
+                        <img class="bar_img" src="assets/img/bar_chart/1.png" alt="lyrics">
                     </div>  
             </section>  <br><br><br>         
-            <b>Below is the lyric visualization of the most frequent sentences.</b><br>
+            <b>Below is the lyric visualization of the <mark>most frequent sentences</mark> for the current song.</b><br>
             <section class="container_lyrics">
-                    <div class="one_lyrics">
-                        <img class="lyrics_img" src="assets/img/lyrics-viz/top-sentence/Tusa.png" alt="lyrics">
+                    <div class="one_lyrics lyric_png-3">
+                        <img class="lyrics_img" src="assets/img/lyrics-viz/top-sentence/1.png" alt="lyrics">
                     </div>
-                    <div class="two_lyrics">
-                        <img class="bar_img" src="assets/img/bar_chart/lovely.png" alt="lyrics">
+                    <div class="two_lyrics bar_png-2">
+                        <img class="bar_img" src="assets/img/bar_chart/1.png" alt="lyrics">
                     </div><br>   
             </section><br><br>          
             </div>
@@ -296,38 +509,6 @@ const inspect = Inspector.into("#observablehq-8ed23bfe");
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script>
-            walk = {
-              replay;
-              const data = [];
-              for (let i = 0, v = 2; i < 50; ++i) {
-                v += Math.random() - 0.5;
-                v = Math.max(Math.min(v, 4), 0);
-                data.push({step: i, value: v});
-                yield data;
-              }
-            }
-
-            walk2 = {
-              replay;
-              const data = [];
-              for (let i = 0, v = 2; i < 50; ++i) {
-                v += Math.random() - 0.5;
-                v = Math.max(Math.min(v, 4), 0) +0.05;
-                data.push({step: i, value: v});
-                yield data;
-              }
-            }
-
-            walkX = d3.scaleLinear()
-            .domain([0, 49])
-            .range([0, width - 10])
-
-            walkY = d3.scaleLinear()
-            .domain([0, 4])
-            .range([500 - 10, 10])
-            line = d3.line()
-            .x(d => walkX(d.step))
-            .y(d => walkY(d.value))
 
         </script>
 

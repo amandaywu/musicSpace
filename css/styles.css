@@ -393,7 +393,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 200;
 }
 
@@ -6641,6 +6641,14 @@ button.bg-dark:focus {
   width: 80%;
   float: left;
 }
+.main_img {
+  display: block;
+  margin-left: 0;
+  /* margin-right: 2rem; */
+  width: 80%;
+  float: left;
+  position: relative;
+}
 .lyrics_img {
   display: block;
   margin-left: 0;
@@ -10119,8 +10127,8 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: calc(12rem + 74px);
+  padding-bottom: 12rem;
 }
 .masthead .masthead-heading {
   font-size: 2.5rem;
@@ -10389,5 +10397,78 @@ form .row:first-child .floating-label-form-group {
   /* width: 50%; */
   height: 650px;
   /* background: black; */
+}
+h1{
+  position: relative;
+  letter-spacing: 3px;
+}
+.dont-flip-me-plz{
+  float: left;
+}
+.flip-me-plz{
+  float: left;
+  -webkit-transform: rotateX(0deg);
+  animation-name: flip-a-letter;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.17,.67,.4,1.42);
+}
+
+@keyframes flip-a-letter {
+    0%   {-webkit-transform: rotateX(0deg);}
+    15%  {-webkit-transform: rotateX(0deg);}
+    30%  {-webkit-transform: rotateX(180deg);}
+    85%  {-webkit-transform: rotateX(180deg);}
+    100% {-webkit-transform: rotateX(0deg);}
+}
+
+div.ex3 {
+  /* background-color: lightblue; */
+  /* width: 210px; */
+  height: 650px;
+  overflow: auto;
+}
+
+
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
+}
+
+.clouds {
+/* position:absolute; */
+/* top:0;
+left:0;
+right:0;
+bottom:0; */
+width:80%;
+height:80%;
+display:block;
+}
+
+.clouds{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+-moz-animation:move-clouds-back 150s linear infinite;
+-ms-animation:move-clouds-back 150s linear infinite;
+-o-animation:move-clouds-back 150s linear infinite;
+-webkit-animation:move-clouds-back 150s linear infinite;
+animation:move-clouds-back 150s linear infinite;
+}
+
+。project-overlay{
+  position: relative;
 }
 
