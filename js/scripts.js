@@ -256,6 +256,7 @@ var features = [feature0, feature1, feature2, feature3, feature4, feature5, feat
 
 
 
+var lyricList = ["everything","broken","lovely","boss","when","blind","everything","dont","box","tusa","life"]
 
 
 $('#picDD').change(function () {
@@ -282,6 +283,17 @@ $('#picDD2').change(function () {
     $('div.lyric_png-3 img').attr("src",lyricList3[val]);
     $('div.bar_png-1 img').attr("src",barList1[val]);
     $('div.bar_png-2 img').attr("src",barList2[val]);
+
+    var x = document.getElementsByClassName("lyric_text");
+
+    for (var i = 0, n = x.length; i < n; ++i) {
+      console.log("in")
+      if (lyricList[val]==x[i].id){
+        document.getElementById(lyricList[val]).style.display = 'block';
+        } else{
+        document.getElementById(x[i].id).style.display = "none";
+        }
+      }
 
 });
 
