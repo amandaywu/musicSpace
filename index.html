@@ -9,7 +9,7 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
         <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script type="module">
+        <!-- <script type="module">
           import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
           import define from "https://api.observablehq.com/d/c0aa7cc7ece03a34.js?v=3";
           const inspect = Inspector.into("#observablehq-7113fe1a");
@@ -20,7 +20,7 @@
         import define from "https://api.observablehq.com/d/c0aa7cc7ece03a34.js?v=3";
         const inspect = Inspector.into("#observablehq-84d0d289");
         (new Runtime).module(define, name => (name === "canvas") && inspect());
-        </script>
+        </script> -->
 <!-- 1 -->
 
 <script type="module">
@@ -101,12 +101,12 @@ const inspect = Inspector.into("#observablehq-c879f3b0");
 
 
 <!-- test -->
-<script type="module">
+<!-- <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@amandawyq/musicspace-audio-features.js?v=3";
 const inspect = Inspector.into("#observablehq-988088c4");
 (new Runtime).module(define, name => name === "newC" ? inspect() : undefined);
-</script>
+</script> -->
 
 
 
@@ -158,6 +158,7 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 <br>
                 <p class="masthead-subheading font-weight-light mb-0"> Enjoy an aesthetic landscape visualization generated based on their unique audio feature scores from Spotify API.</p>
                 <br>
+                <label for="picDD">Choose a track:</label>
                     <select id="picDD">
                         <option value="0">Choose a track:</option>
                         <option value="1">Broke In A Minute</option>
@@ -165,7 +166,7 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <option value="3">Boss Bitch</option>
                         <option value="4">when the party's over</option>
                         <option value="5">Blinding Lights</option>
-                        <option value="6">everything i wanted</option>
+                        <option value="6" selected>everything i wanted</option>
                         <option value="7">Don't Start Now</option>
                         <option value="8">The Box</option>
                         <option value="9">Tusa</option>
@@ -176,7 +177,7 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 </div><br>
                 <!-- <div id="observablehq-7113fe1a"></div> -->
                 <div class="main_img main_png">
-                        <img class="lyrics_img" src="assets/img/main_picture.png" alt="lyrics">
+                        <img class="lyrics_img" src="assets/img/main_pictures/6.png" alt="lyrics">
                         <!-- <div id="observablehq-988088c4" class="lyrics_img"></div> -->
                         <!-- <div class="clouds"></div> -->
                         <!-- <div id="observablehq-988088c4" class="project-overlay"></div> -->
@@ -191,13 +192,13 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 <p class="text-center">We visualize a song based on 9 audio features populated by Spotify
                 based on the characteristics<br> of the song. Below is a breakdown 
                 of each audio feature we’ve used in the visualization above.</p>
-                <div class="test" id="observablehq-d94478d0" style="display: block;"></div>
+                <!-- <div class="test" id="observablehq-d94478d0" style="display: block;"></div> -->
                 <div class="test" id="observablehq-d94478d0" style="display: none;"></div>
                 <div class="test" id="observablehq-e04a3803" style="display: none;"></div>
                 <div class="test" id="observablehq-0e2b0c82" style="display: none;"></div>
                 <div class="test" id="observablehq-cb38311b" style="display: none;"></div>
                 <div class="test" id="observablehq-e994e423" style="display: none;"></div>
-                <div class="test" id="observablehq-901cd562" style="display: none;"></div>
+                <div class="test" id="observablehq-901cd562" style="display: block;"></div>
                 <div class="test" id="observablehq-619e3d29" style="display: none;"></div>
                 <div class="test" id="observablehq-dd16af16" style="display: none;"></div>
                 <div class="test" id="observablehq-b112ca83" style="display: none;"></div>
@@ -209,23 +210,23 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 <h2 class="page-section-heading text-center">Explore a Feature by Comparing 2 Tracks</h2>
                     <br><!-- <div class="custom-select" style="width:250px;"> -->
                             <!-- <div id="observablehq-988088c4"></div> -->
-
-                    <select id="audio_dropdown">
-                          <option value="0">Select an Audio Feature:</option>
-                          <option value="1">danceability</option>
-                          <option value="2">energy</option>
-                          <option value="3">acousticness</option>
-                          <option value="4">instrumentalness</option>
-                          <option value="5">liveness</option>
-                          <option value="6">speechiness</option>
-                          <option value="7">tempo</option>
-                          <option value="8">valence</option>
-                          <option value="9">mode</option>
+                    <!-- <label for="audio_dropdown">Select an Audio Feature:</label> -->
+                    <select id="try_me">
+                        <option value="0">Select an Audio Feature:</option>
+                        <option value="1">danceability</option>
+                        <option value="2"  selected>energy</option>
+                        <option value="3">acousticness</option>
+                        <option value="4">instrumentalness</option>
+                        <option value="5">liveness</option>
+                        <option value="6">speechiness</option>
+                        <option value="7">tempo</option>
+                        <option value="8">valence</option>
+                        <option value="9">mode</option>
                     </select><br>
-                      <!-- </div> -->
-                    <div class="audio_select choose text-center"></div>
-
-                    <div class="audio_select select-1 text-center" style="display: none;">
+                    <div class="audio_select" id="none" style="display: none;">
+                        <br><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="audio_select text-center" id="danceability" style="display: none;">
                     <b>Danceability</b>
                         <p>Danceability describes how suitable a track is for dancing based on a combination of musical <br>
                         elements including tempo, rhythm stability, beat strength, and overall regularity. A value of <br>
@@ -234,7 +235,27 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <p>We use a jagged line to represent dancability because the edges and sharp points remind us of <br>
                         pulse and represents movement. The higher the danceability is, the more jagged the line is. </p>
                     </div>
-                    <div class="audio_select select-4 text-center" style="display: none;">
+                    <div class="audio_select text-center" id="energy"  style="display: block;">
+                    <b>Energy</b>
+                        <p>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. <br> 
+                        Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while <br>
+                         a Bach prelude scores low on the scale. </p><br>
+                        <b>How we choose the visual encoding: </b>
+                        <p>We use transparency of the entire picture to represent energy because we think an energeteic song will <br>
+                        have more presence and therefore has less transparency.</p>
+                    </div>
+                    <div class="audio_select text-center" id="acousticness"  style="display: none;">
+
+                    <b>Acousticness</b>
+                    <p>Acoustic music primarily uses instruments that produce sound through acoustic means, as opposed <br>
+                     to electric or electronic means.A confidence measure from 0.0 to 1.0 of whether the track is acoustic. <br>
+                      1.0 represents high confidence the track is acoustic.</p><br>
+                    <b>How we choose the visual encoding: </b>
+                    <p>We decided to use line to represent the precense of additional track/instrument. A song with acoustic <br>
+                     score close to 1.0 will have less line and vice versa. The total amount of lines to display is 10. <br>
+                      (when acoustic score is from 0.0-0.1) </p>
+                    </div>
+                    <div class="audio_select text-center" id="instrumentalness"  style="display: none;">
 
                     <b>Instrumentalness</b>
                         <p>Predicts whether a track contains no vocals.  Rap or spoken word tracks are clearly “vocal”. <br> 
@@ -244,25 +265,8 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <b>How we choose the visual encoding: </b>
                         <p>We use the magnitude of the sun/moon to represent instrumentalness. The size of the sun represents <br> 
                             the amount of vocal content. Music with a high instrumentalness score will result in a very small sun/moon.</p>
-                    </div>                    
-                    <div class="audio_select select-7 text-center" style="display: none;">
-                    <b>Tempo</b>
-                        <p>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is <br> 
-                            the speed or pace of a given piece and derives directly from the average beat duration. </p><br>
-                        <b>How we choose the visual encoding: </b>
-                        <p>We use the wave to represent tempo because we think the movement in water can represent the speed or pace of a song.<br> 
-                        If the tempo number is high, the waves will be more dense to reflect the fast pace. </p>
-                    </div>                    
-                    <div class="audio_select select-2 text-center" style="display: none;">
-                    <b>Energy</b>
-                        <p>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. <br> 
-                        Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while <br>
-                         a Bach prelude scores low on the scale. </p><br>
-                        <b>How we choose the visual encoding: </b>
-                        <p>We use transparency of the entire picture to represent energy because we think an energeteic song will <br>
-                        have more presence and therefore has less transparency.</p>
-                    </div>
-                    <div class="audio_select select-5 text-center" style="display: none;">
+                    </div>                                    
+                    <div class="audio_select text-center" id="liveness"  style="display: none;">
                     <b>Liveness</b>
                         <p>Detects the presence of an audience in the recording. Higher liveness values represent an increased <br> 
                             probability that the track was performed live. A value above 0.8 provides strong likelihood <br> 
@@ -271,8 +275,26 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <p>We use the magnitude of green mountains to represent liveness because mountains convey a sense of <br> 
                             liveliness and energy normally seen from the audience in musical performances. A high liveness score <br> 
                             will results in taller/bigger sets of mountains in the visualization.</p>
-                    </div>                    
-                    <div class="audio_select select-8 text-center" style="display: none;">
+                    </div>  
+                    <div class="audio_select text-center" id="speechiness"  style="display: none;">
+                            <b>Speechiness</b>
+                                <p>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the <br>
+                                     recording, the closer to 1.0 the attribute value. Values between 0.33 and 0.66 describe tracks that <br> 
+                                     may contain both music and speech, either in sections or layered, including such cases as rap music. <br> 
+                                     Values below 0.33 most likely represent music and other non-speech-like tracks.</p><br>
+                                <b>How we choose the visual encoding: </b>
+                                <p>The animated cloud represents the speechiness of a song. Higher speechiness score will generate more cloud, <br> 
+                                    and if a speechiness score is close to 1, the visualization will be covered by cloud.   </p>
+                    </div>   
+                    <div class="audio_select text-center" id="tempo"  style="display: none;">
+                            <b>Tempo</b>
+                                <p>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is <br> 
+                                    the speed or pace of a given piece and derives directly from the average beat duration. </p><br>
+                                <b>How we choose the visual encoding: </b>
+                                <p>We use the wave to represent tempo because we think the movement in water can represent the speed or pace of a song.<br> 
+                                If the tempo number is high, the waves will be more dense to reflect the fast pace. </p>
+                    </div>                   
+                    <div class="audio_select text-center" id="valence"  style="display: none;">
                     <b>Valence</b>
                         <p>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high <br> 
                             valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more <br> 
@@ -281,28 +303,8 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <p>We use the color scheme of the background to represent valence because we think color communicates mood <br> 
                         very well, and valence is a representation of the overall mood of the song. When the song has a high valence  <br>
                         score, it tends to be happier, and we increase the amount of warm tone in the color gradient, and vice versa.</p>
-                    </div>                     
-                    <div class="audio_select select-3 text-center" style="display: none;">
-                    <b>Acousticness</b>
-                        <p>Acoustic music primarily uses instruments that produce sound through acoustic means, as opposed <br>
-                         to electric or electronic means.A confidence measure from 0.0 to 1.0 of whether the track is acoustic. <br>
-                          1.0 represents high confidence the track is acoustic.</p><br>
-                        <b>How we choose the visual encoding: </b>
-                        <p>We decided to use line to represent the precense of additional track/instrument. A song with acoustic <br>
-                         score close to 1.0 will have less line and vice versa. The total amount of lines to display is 10. <br>
-                          (when acoustic score is from 0.0-0.1) </p>
-                    </div>
-                    <div class="audio_select select-6 text-center" style="display: none;">
-                    <b>Speechiness</b>
-                        <p>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the <br>
-                             recording, the closer to 1.0 the attribute value. Values between 0.33 and 0.66 describe tracks that <br> 
-                             may contain both music and speech, either in sections or layered, including such cases as rap music. <br> 
-                             Values below 0.33 most likely represent music and other non-speech-like tracks.</p><br>
-                        <b>How we choose the visual encoding: </b>
-                        <p>The animated cloud represents the speechiness of a song. Higher speechiness score will generate more cloud, <br> 
-                            and if a speechiness score is close to 1, the visualization will be covered by cloud.   </p>
-                    </div>                    
-                    <div class="audio_select select-9 text-center" style="display: none;">
+                    </div>                                      
+                    <div class="audio_select text-center" id="mode"  style="display: none;">
                         <b>Mode</b>
                         <p>Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic <br> 
                             content is derived. Major is represented by 1 and minor is 0.</p><br>
@@ -317,9 +319,10 @@ const inspect = Inspector.into("#observablehq-988088c4");
                     
                         <section class="container_compare">
                             <div class="one col-md-12 school-options-dropdown text-center">
+                                    <!-- <label for="track1">Choose a track:</label> -->
                                     <select id="track1">
                                             <option value="0">Choose a track:</option>
-                                            <option value="1">Broke In A Minute</option>
+                                            <option value="1" selected>Broke In A Minute</option>
                                             <option value="2">lovely (with Khalid)</option>
                                             <option value="3">Boss Bitch</option>
                                             <option value="4">when the party's over</option>
@@ -332,15 +335,16 @@ const inspect = Inspector.into("#observablehq-988088c4");
                                         </select><br><br>
                                         <svg width = 300 height = 300 style="border: grey solid 3px">
                                         <!-- <img class="" src="assets/img/portfolio/test2.png">  -->
-                                        <image href="https://i.ibb.co/9NBMr57/2.png" height="300" width="300"/>
+                                        <image href="https://i.ibb.co/Mhy8zrY/1.png" height="300" width="300"/>
 
                                     </svg>
                             </div>
                             <div class="two col-md-12 school-options-dropdown text-center">
+                                    <!-- <label for="track2">Choose a track:</label> -->
                                     <select id="track2">
                                             <option value="0">Choose a track:</option>
                                             <option value="1">Broke In A Minute</option>
-                                            <option value="2">lovely (with Khalid)</option>
+                                            <option value="2" selected>lovely (with Khalid)</option>
                                             <option value="3">Boss Bitch</option>
                                             <option value="4">when the party's over</option>
                                             <option value="5">Blinding Lights</option>
@@ -351,7 +355,7 @@ const inspect = Inspector.into("#observablehq-988088c4");
                                             <option value="10">Life Is Good (feat. Drake)</option>
                                     </select><br><br>
                                     <svg width = 300 height = 300 style="border: grey solid 3px">
-                                        <image href="https://i.ibb.co/gtD1gKc/boss-acousticness.png" height="300" width="300"/>
+                                        <image href="https://i.ibb.co/0YKKMDX/2.png" height="300" width="300"/>
                                     </svg>
                                     <!-- <img class="img-test" src="assets/img/portfolio/test3.png"/>    -->
                             </div>
@@ -378,8 +382,9 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 <img class="lyrics_ex_img" src="assets/img/matrix.png" alt="lyrics"><br><br>
                 <h2 class="page-section-heading text-center">Lyrics Visualization</h2>
                 <br>
+                <label for="picDD2">Choose a track:</label>
                 <select id="picDD2">
-                        <option value="0">Choose a track:</option>
+                        <!-- <option value="0">Choose a track:</option> -->
                         <option value="1">Broke In A Minute</option>
                         <option value="2">lovely (with Khalid)</option>
                         <option value="3">Boss Bitch</option>
