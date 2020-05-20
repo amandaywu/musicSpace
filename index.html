@@ -129,9 +129,12 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#home">Music Room</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#audio_viz">Audio Viz</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#audio">Audio Features</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#compare">Compare Tracks</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#compare">Compare</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#lyrics">Lyrics</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#lyric_viz">Lyric Viz</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -175,22 +178,24 @@ const inspect = Inspector.into("#observablehq-988088c4");
                 <div class="divider-custom">
                         <h4 class="masthead-subheading text-center mb-0"> Now, scroll down!</h4>
                 </div><br><br><br><br>
+            </div>
+        </section>
 
 
 
-
+            <section class="page-section mt-3 mb-5" id="audio_viz">
+                <div class="container d-flex align-items-center flex-column">
 
                 <div class="divider-custom divider-light">
                         <div class="divider-custom-line"></div>
                         <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> -->
                         <div class="divider-custom-line"></div>
                     </div>
+                
                 <h2 class="page-section-heading text-center">Audio Feature Visualization</h2>
                 <br>
-                <p class="masthead-subheading font-weight-light mb-0"> Enjoy an aesthetic landscape visualization generated based on their unique audio feature scores from Spotify API.</p>
-                <br>
-                
-                
+                <p class="masthead-subheading font-weight-light mb-0"> Enjoy an aesthetic landscape visualization generated for the above track based on its unique audio feature scores from Spotify API.</p>
+            
                 <br>
                 <!-- <div id="observablehq-7113fe1a"></div> -->
                 <div class="main_img main_png">
@@ -198,7 +203,6 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <!-- <div id="observablehq-988088c4" class="lyrics_img"></div> -->
                         <!-- <div class="clouds"></div> -->
                         <!-- <div id="observablehq-988088c4" class="project-overlay"></div> -->
-
                 </div>
                 <br><br>
             </div>
@@ -208,7 +212,7 @@ const inspect = Inspector.into("#observablehq-988088c4");
 
                 <h4 class="page-section-heading text-center">How We Visualize Audio Features</h4>
                 <p class="text-center">We visualize a song based on 9 audio features populated by Spotify
-                based on the characteristics<br> of the song. Below is a breakdown 
+                based on the characteristics of the song.<br>Below is a breakdown 
                 of each audio feature we’ve used in the <u>visualization above</u>. (hover to see their scores)</p>
                 <!-- <div class="test" id="observablehq-d94478d0" style="display: block;"></div> -->
                 <div class="test" id="observablehq-d94478d0" style="display: none;"></div>
@@ -398,12 +402,14 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <li>Plot the matrix with colormap YlGnBu based on the relative score from 0-1</li>
                 </ol>
                 <img class="lyrics_ex_img" src="assets/img/matrix.png" alt="lyrics"><br><br>
-                <h2 class="page-section-heading text-center">Lyrics Visualization</h2>
+                <section class="page-section mt-3 mb-3" id="lyric_viz">
+
+                <h2 class="page-section-heading text-center">Lyric Visualization</h2>
                 <br>
-                <label for="picDD2">Choose a track:</label>
-                <select id="picDD2">
+                <!-- <label for="picDD2">Choose a track:</label> -->
+                <!-- <select id="picDD2"> -->
                         <!-- <option value="0">Choose a track:</option> -->
-                        <option value="1">Broke In A Minute</option>
+                        <!-- <option value="1">Broke In A Minute</option>
                         <option value="2">lovely (with Khalid)</option>
                         <option value="3">Boss Bitch</option>
                         <option value="4">when the party's over</option>
@@ -412,11 +418,12 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <option value="7">Don't Start Now</option>
                         <option value="8">The Box</option>
                         <option value="9">Tusa</option>
-                        <option value="10">Life Is Good (feat. Drake)</option>
-                </select><br>
-            
-            <b>Below is the lyric visualization of the current song based on the frequency of the words.</b><br>
-            <section class="container_lyrics">
+                        <option value="10">Life Is Good (feat. Drake)</option> -->
+                <!-- </select> -->
+                <br>
+
+            <h6 class="text-center">Below is the lyric visualization of the <u>current song</u> based on word frequency.</h4><br>
+                <section class="container_lyrics">
                     <div class="one_lyrics lyric_png-1">
                         <img class="lyrics_img" src="assets/img/lyrics-viz/whole-song/6.png" alt="lyrics">
                     </div>
@@ -1079,21 +1086,22 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         </div>
                     </div>
                     <br>
-                </section><br><br><br>
+                </section>
+            </section>
 
             <b>Below is the lyric visualization of the <mark>most frequent words</mark> for the current song.</b><br>
             <section class="container_lyrics">
                     <div class="one_lyrics lyric_png-2">
-                        <img class="lyrics_img" src="assets/img/lyrics-viz/top-word/6.png" alt="lyrics">
+                        <img class="lyrics_img1" src="assets/img/lyrics-viz/top-word/6.png" alt="lyrics">
                     </div>
                     <div class="two_lyrics bar_png-1">
                         <img class="bar_img" src="assets/img/bar_chart/6.png" alt="lyrics">
                     </div>  
-            </section>  <br><br><br>         
+            </section>         
             <b>Below is the lyric visualization of the <mark>most frequent sentences</mark> for the current song.</b><br>
             <section class="container_lyrics">
                     <div class="one_lyrics lyric_png-3">
-                        <img class="lyrics_img" src="assets/img/lyrics-viz/top-sentence/6.png" alt="lyrics">
+                        <img class="lyrics_img1" src="assets/img/lyrics-viz/top-sentence/6.png" alt="lyrics">
                     </div>
                     <div class="two_lyrics bar_png-2">
                         <img class="bar_img" src="assets/img/bar_chart/6.png" alt="lyrics">

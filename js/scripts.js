@@ -288,6 +288,19 @@ $('#picDD').change(function () {
       document.getElementById(x[i].id).style.display = "none";
       }
     }
+
+    $('div.lyric_png-1 img').attr("src",lyricList1[val]);
+
+    var y = document.getElementsByClassName("lyric_text");
+
+    for (var i = 0, n = y.length; i < n; ++i) {
+      console.log("in")
+      if (lyricList[val]==y[i].id){
+        document.getElementById(lyricList[val]).style.display = 'block';
+        } else{
+        document.getElementById(y[i].id).style.display = "none";
+        }
+      }
 });
 
 $('#picDD2').change(function () {
