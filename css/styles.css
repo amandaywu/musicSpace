@@ -6644,14 +6644,13 @@ button.bg-dark:focus {
   display: block;
   /* margin-left: 0; */
   /* margin-right: 2rem; */
-  width: 80%;
+  width: 90%;
   float: left;
   position: relative;
 }
 .lyrics_img {
   display: block;
   margin-left: 0;
-  margin-right: 2rem;
   width: 95%;
   float: left;
 }
@@ -10032,7 +10031,7 @@ h3 {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: black;
 }
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff !important;
@@ -10394,6 +10393,7 @@ form .row:first-child .floating-label-form-group {
 .two_lyrics {
   margin-left: 30%;
   /* width: 50%; */
+
   height: 650px;
   /* background: black; */
 }

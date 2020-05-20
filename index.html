@@ -153,12 +153,10 @@ const inspect = Inspector.into("#observablehq-988088c4");
             </div>
         </header>
          <section class="page-section mt-3 mb-5" id="home">
-            <div class="container d-flex align-items-center flex-column">
-                <h2 class="page-section-heading text-center">Audio Feature Visualization</h2>
-                <br>
-                <p class="masthead-subheading font-weight-light mb-0"> Enjoy an aesthetic landscape visualization generated based on their unique audio feature scores from Spotify API.</p>
-                <br>
-                <label for="picDD">Choose a track:</label>
+            <div class="container d-flex align-items-center flex-column"><br>
+                    <h5 class="masthead-subheading text-center mb-0">First, choose a track:</h5><br>
+                    <br>
+                <!-- <label for="picDD">First, choose a track:</label><br> -->
                     <select id="picDD">
                         <option value="0">Choose a track:</option>
                         <option value="1">Broke In A Minute</option>
@@ -171,10 +169,29 @@ const inspect = Inspector.into("#observablehq-988088c4");
                         <option value="8">The Box</option>
                         <option value="9">Tusa</option>
                         <option value="10">Life Is Good (feat. Drake)</option>
-                    </select>
-  
-                 <div class="divider-custom">
-                </div><br>
+                    </select> <br><br>
+                    <iframe src="https://open.spotify.com/embed/track/3ZCTVFBt2Brf31RLEnCkWJ"  width="350" height="430" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+                    <!-- "https://open.spotify.com/embed/track/3Qm7g6FlQ5Stq3sbXfgOjl" <br> -->
+                <div class="divider-custom">
+                        <h4 class="masthead-subheading text-center mb-0"> Now, scroll down!</h4>
+                </div><br><br><br><br>
+
+
+
+
+
+                <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> -->
+                        <div class="divider-custom-line"></div>
+                    </div>
+                <h2 class="page-section-heading text-center">Audio Feature Visualization</h2>
+                <br>
+                <p class="masthead-subheading font-weight-light mb-0"> Enjoy an aesthetic landscape visualization generated based on their unique audio feature scores from Spotify API.</p>
+                <br>
+                
+                
+                <br>
                 <!-- <div id="observablehq-7113fe1a"></div> -->
                 <div class="main_img main_png">
                         <img class="lyrics_img" src="assets/img/main_pictures/6.png" alt="lyrics">
@@ -188,10 +205,11 @@ const inspect = Inspector.into("#observablehq-988088c4");
          </section>
         <section class="page-section mt-3 mb-5" id="audio">
                 <div class="container d-flex align-items-center flex-column">
+
                 <h4 class="page-section-heading text-center">How We Visualize Audio Features</h4>
                 <p class="text-center">We visualize a song based on 9 audio features populated by Spotify
                 based on the characteristics<br> of the song. Below is a breakdown 
-                of each audio feature we’ve used in the <u>visualization above</u>.</p>
+                of each audio feature we’ve used in the <u>visualization above</u>. (hover to see their scores)</p>
                 <!-- <div class="test" id="observablehq-d94478d0" style="display: block;"></div> -->
                 <div class="test" id="observablehq-d94478d0" style="display: none;"></div>
                 <div class="test" id="observablehq-e04a3803" style="display: none;"></div>

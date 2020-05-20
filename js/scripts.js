@@ -254,7 +254,20 @@ var feature9 = ["","https://i.ibb.co/M9LMv5H/1.png","https://i.ibb.co/1TZTdrj/2.
 
 var features = [feature0, feature1, feature2, feature3, feature4, feature5, feature6, feature7, feature8, feature9]
 
+var playList =[ 
+  "",
+  "https://open.spotify.com/embed/track/4xqIYGwwZTEem9U8A42SPF",
+  "https://open.spotify.com/embed/track/0u2P5u6lvoDfwTYjAADbn4", 
+  "https://open.spotify.com/embed/track/78qd8dvwea0Gosb6Fe6j3k", 
+  "https://open.spotify.com/embed/track/43zdsphuZLzwA9k4DJhU0I", 
+  "https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b", 
 
+  "https://open.spotify.com/embed/track/3ZCTVFBt2Brf31RLEnCkWJ",
+  "https://open.spotify.com/embed/track/3PfIrDoz19wz7qK7tYeu62", 
+  "https://open.spotify.com/embed/track/0nbXyq5TXYPCO7pr3N8S4I", 
+  "https://open.spotify.com/embed/track/7k4t7uLgtOxPwTpFmtJNTY", 
+  "https://open.spotify.com/embed/track/5yY9lUy8nbvjM1Uyo1Uqoc" 
+]
 
 var lyricList = ["everything","broken","lovely","boss","when","blind","everything","dont","box","tusa","life"]
 
@@ -264,6 +277,8 @@ $('#picDD').change(function () {
   console.log(val)
 
   $('div.main_png img').attr("src",mainList[val]);
+  $('iframe').attr("src",playList[val]);
+
   var x = document.getElementsByClassName("test");
   for (var i = 0, n = x.length; i < n; ++i) {
     // get id property from element and set as innerHTML
