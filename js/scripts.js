@@ -290,6 +290,10 @@ $('#picDD').change(function () {
     }
 
     $('div.lyric_png-1 img').attr("src",lyricList1[val]);
+    $('div.lyric_png-2 img').attr("src",lyricList2[val]);
+    $('div.lyric_png-3 img').attr("src",lyricList3[val]);
+    $('div.bar_png-1 img').attr("src",barList1[val]);
+    $('div.bar_png-2 img').attr("src",barList2[val]);
 
     var y = document.getElementsByClassName("lyric_text");
 
