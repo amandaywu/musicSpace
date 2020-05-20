@@ -10265,43 +10265,42 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 
-
 @keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
 }
 @-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
 }
 @-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
 }
 @-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
 }
 
 .clouds {
-  position:absolute;
-  top:0;
-  left:10;
-  right:-10;
-  bottom:0;
-  width:37%;
-  height:100%;
-  display:block;
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:95%;
+height:100%;
+display:block;
 }
 
 .clouds{
-    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-    z-index:3;
-  -moz-animation:move-clouds-back 100s linear infinite;
-  -ms-animation:move-clouds-back 100s linear infinite;
-  -o-animation:move-clouds-back 100s linear infinite;
-  -webkit-animation:move-clouds-back 100s linear infinite;
-  animation:move-clouds-back 100s linear infinite;
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+-moz-animation:move-clouds-back 100s linear infinite;
+-ms-animation:move-clouds-back 100s linear infinite;
+-o-animation:move-clouds-back 100s linear infinite;
+-webkit-animation:move-clouds-back 100s linear infinite;
+animation:move-clouds-back 100s linear infinite;
 }
 
 .custom-select {
@@ -10441,43 +10440,6 @@ div.ex3 {
 }
 
 
-@keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
-}
-@-webkit-keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
-}
-@-moz-keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
-}
-@-ms-keyframes move-clouds-back {
-  from {background-position: 0;}
-  to {background-position:10000px 0;}
-}
-
-.clouds {
-/* position:absolute; */
-/* top:0;
-left:0;
-right:0;
-bottom:0; */
-width:80%;
-height:80%;
-display:block;
-}
-
-.clouds{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-  z-index:3;
--moz-animation:move-clouds-back 150s linear infinite;
--ms-animation:move-clouds-back 150s linear infinite;
--o-animation:move-clouds-back 150s linear infinite;
--webkit-animation:move-clouds-back 150s linear infinite;
-animation:move-clouds-back 150s linear infinite;
-}
 
 。project-overlay{
   position: relative;
